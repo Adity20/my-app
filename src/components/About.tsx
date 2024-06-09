@@ -65,7 +65,7 @@ const About = () => {
             <div className="mt-4 flex flex-wrap gap-4">
               <button className="bg-amber-500 hover:bg-amber-600 text-black px-4 py-2 font-semibold w-full sm:w-3/4 md:w-2/3 lg:w-2/3 xl:w-1/2 h-16 rounded text-base shadow-xl">
                 <span className="text-white">Build your own voice agent</span>{" "}
-                <span className="text-black">'Coming soon'</span>
+                <span className="text-black">&apos;Coming soon&apos;</span>
               </button>
               <button className="bg-white text-black px-4 py-2 font-semibold w-full sm:w-auto rounded text-sm border-2">
                 Hear it in action

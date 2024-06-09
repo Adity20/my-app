@@ -63,9 +63,9 @@ const SafetyAndSecurity = () => {
               <Image src= {img}alt="Icon" width={600} height={80} /> {/* Use the Image component with the correct attributes */}
             </div>
             <div>
-              <h2 className="text-4xl font-bold text-black">The highest standard of trust and security</h2>
+              <h2 className="text-4xl font-bold text-black">The highest standard of trust and security&apos;s</h2>
               <p className="mt-4 text-gray-700 text-sm">
-                With robust internal audits and stringent data governance, we champion the ethical use of AI, ensuring technology serves humanity's best interests. Our commitment sets the foundation for Advanced General Intelligence (AGI) with integrity.
+                With robust internal audits and stringent data governance, we champion the ethical use of AI, ensuring technology serves &apos; humanity &apos;best interests. Our commitment sets the foundation for Advanced General Intelligence (AGI) with integrity.
               </p>
             </div>
           </div>
