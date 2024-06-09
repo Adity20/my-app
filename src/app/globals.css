@@ -7,6 +7,83 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+/* globals.css */
+/* globals.css */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* global.css */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+.bg-gradient-amber {
+  background: linear-gradient(180deg, #ffd3b4 40%, #fff);
+}
+
+.full-width-banner {
+  width: 100%;
+  height: 36px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes animateUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-column > * {
+  animation: animateUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-column > *:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.animate-column > *:nth-child(2) {
+  animation-delay: 0.4s;
+}
+@keyframes text-animation {
+  0% { margin-top: 0; }
+  6.67% { margin-top: -2.81rem; }
+  13.34% { margin-top: -5.62rem; }
+  20.01% { margin-top: -8.43rem; }
+  26.68% { margin-top: -11.24rem; }
+  33.35% { margin-top: -14.05rem; }
+  40.02% { margin-top: -16.86rem; }
+  46.69% { margin-top: -19.67rem; }
+  53.36% { margin-top: -22.48rem; }
+  60.03% { margin-top: -25.29rem; }
+  66.7% { margin-top: -28.1rem; }
+  73.37% { margin-top: -30.91rem; }
+  80.04% { margin-top: -33.72rem; }
+  86.71% { margin-top: -36.53rem; }
+  93.38% { margin-top: -39.34rem; }
+  100% { margin-top: -42.15rem; }
+}
+
+.animation div:first-child {
+  animation: text-animation 14s infinite;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -29,5 +106,27 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+.grid {
+  position: relative;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .border-t {
+    border-top-width: 1px;
+  }
+  .border-l {
+    border-left-width: 1px;
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
